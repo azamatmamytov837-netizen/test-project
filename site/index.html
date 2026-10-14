@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Персональный тренер — Имя Фамилия</title>
+  <meta name="description" content="Персональные тренировки в зале и онлайн: снижение веса, набор мышечной массы, здоровая спина. Запишитесь на первую тренировку.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ЗАМЕНИТЕ: все тексты в квадратных скобках и помеченные «ЗАМЕНИТЕ» — на свои данные -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">ИМЯ<span>.FIT</span></a>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#about">Обо мне</a>
+        <a href="#services">Услуги</a>
+        <a href="#prices">Цены</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contact" class="btn btn--small">Записаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Персональный тренер · [Город] и онлайн</p>
+          <h1>Тренировки, которые дают результат — без изнурения и срывов</h1>
+          <p class="lead">Составлю программу под вашу цель, уровень подготовки и график. Научу технике, помогу с питанием и буду рядом до результата.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn">Записаться на пробную</a>
+            <a href="#prices" class="btn btn--ghost">Смотреть цены</a>
+          </div>
+          <ul class="facts">
+            <li><strong>[X] лет</strong><span>опыта работы</span></li>
+            <li><strong>[X]+</strong><span>клиентов</span></li>
+            <li><strong>[Сертификат]</strong><span>квалификация</span></li>
+          </ul>
+        </div>
+        <div class="hero__photo" role="img" aria-label="Место для фото тренера">
+          <span>Ваше фото<br><small>замените в style.css (.hero__photo)</small></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__photo" role="img" aria-label="Место для фото тренера в зале"></div>
+        <div>
+          <p class="eyebrow">Обо мне</p>
+          <h2>Привет! Я [Имя], ваш тренер</h2>
+          <p>[Коротко о себе: как пришли в спорт, почему стали тренером, какой у вас подход. 2–4 предложения.]</p>
+          <ul class="checklist">
+            <li>[Образование / диплом]</li>
+            <li>[Сертификаты и курсы повышения квалификации]</li>
+            <li>[Спортивные достижения, если есть]</li>
+            <li>Работаю с новичками и с теми, кто давно тренируется</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <p class="eyebrow">Услуги</p>
+        <h2>С чем я помогу</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🔥</div>
+            <h3>Снижение веса</h3>
+            <p>Силовые и кардио-тренировки плюс понятные рекомендации по питанию без жёстких диет.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">💪</div>
+            <h3>Набор мышечной массы</h3>
+            <p>Программа с прогрессией нагрузок, контроль техники и восстановления.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🧘</div>
+            <h3>Здоровая спина и осанка</h3>
+            <p>Укрепление мышц кора, мобильность, работа с осанкой для офисного образа жизни.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">💻</div>
+            <h3>Онлайн-ведение</h3>
+            <p>Программа тренировок, разбор техники по видео и связь в мессенджере — из любого города.</p>
+          </article>
+        </div>
+        <p class="note">Если у вас есть заболевания или травмы, перед началом тренировок проконсультируйтесь с врачом.</p>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <p class="eyebrow">Как проходит работа</p>
+        <h2>4 шага до результата</h2>
+        <ol class="steps">
+          <li><strong>Знакомство</strong><span>Обсуждаем цель, опыт, ограничения и ваш график.</span></li>
+          <li><strong>Пробная тренировка</strong><span>Оцениваю уровень подготовки и технику.</span></li>
+          <li><strong>Программа</strong><span>Составляю план тренировок и рекомендации по питанию.</span></li>
+          <li><strong>Контроль</strong><span>Отслеживаем прогресс и корректируем план.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="prices">
+      <div class="container">
+        <p class="eyebrow">Цены</p>
+        <h2>Форматы и стоимость</h2>
+        <div class="prices">
+          <article class="price">
+            <h3>Пробная</h3>
+            <p class="price__value">[0 ₽]</p>
+            <ul>
+              <li>1 тренировка, 60 минут</li>
+              <li>Оценка подготовки</li>
+              <li>Рекомендации по старту</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost" data-plan="Пробная">Выбрать</a>
+          </article>
+          <article class="price price--accent">
+            <span class="badge">Популярно</span>
+            <h3>Абонемент</h3>
+            <p class="price__value">[0 ₽]<small> / 8 тренировок</small></p>
+            <ul>
+              <li>8 персональных тренировок</li>
+              <li>Индивидуальная программа</li>
+              <li>Рекомендации по питанию</li>
+              <li>Связь в мессенджере</li>
+            </ul>
+            <a href="#contact" class="btn" data-plan="Абонемент">Выбрать</a>
+          </article>
+          <article class="price">
+            <h3>Онлайн</h3>
+            <p class="price__value">[0 ₽]<small> / месяц</small></p>
+            <ul>
+              <li>Программа на месяц</li>
+              <li>Разбор техники по видео</li>
+              <li>Еженедельная обратная связь</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost" data-plan="Онлайн">Выбрать</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <p class="eyebrow">Отзывы</p>
+        <h2>Что говорят клиенты</h2>
+        <p class="note">Ниже — шаблоны. Замените их настоящими отзывами клиентов (с их согласия).</p>
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>[Текст отзыва клиента.]</blockquote>
+            <figcaption>[Имя клиента], [результат / срок]</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>[Текст отзыва клиента.]</blockquote>
+            <figcaption>[Имя клиента], [результат / срок]</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>[Текст отзыва клиента.]</blockquote>
+            <figcaption>[Имя клиента], [результат / срок]</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <p class="eyebrow">Вопросы</p>
+        <h2>Частые вопросы</h2>
+        <details>
+          <summary>Я никогда не занимался(ась). Мне подойдёт?</summary>
+          <p>Да. Программа строится от вашего текущего уровня, нагрузка растёт постепенно.</p>
+        </details>
+        <details>
+          <summary>Где проходят тренировки?</summary>
+          <p>[Название и адрес зала] или онлайн — по видеосвязи и с ведением в мессенджере.</p>
+        </details>
+        <details>
+          <summary>Что взять с собой?</summary>
+          <p>Удобную спортивную форму, кроссовки, воду и полотенце.</p>
+        </details>
+        <details>
+          <summary>Можно ли перенести тренировку?</summary>
+          <p>[Ваши правила переноса, например: да, если предупредить не позднее чем за 12 часов.]</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow">Запись</p>
+          <h2>Запишитесь на пробную тренировку</h2>
+          <p>Оставьте имя и цель — заявка откроется в WhatsApp, останется нажать «Отправить». Или напишите напрямую:</p>
+          <ul class="contacts">
+            <li>Телефон: <a href="tel:+70000000000">[+7 000 000-00-00]</a></li>
+            <li>Telegram: <a href="https://t.me/username" target="_blank" rel="noopener">[@username]</a></li>
+            <li>Instagram: <a href="https://instagram.com/username" target="_blank" rel="noopener">[@username]</a></li>
+            <li>Адрес: [город, зал, улица]</li>
+          </ul>
+        </div>
+        <form class="form" id="form" novalidate>
+          <label>Имя
+            <input name="name" type="text" required autocomplete="name" placeholder="Как к вам обращаться">
+          </label>
+          <label>Телефон или Telegram
+            <input name="contact" type="text" required autocomplete="tel" placeholder="+7 ... или @username">
+          </label>
+          <label>Формат
+            <select name="plan">
+              <option>Пробная</option>
+              <option>Абонемент</option>
+              <option>Онлайн</option>
+            </select>
+          </label>
+          <label>Цель
+            <textarea name="goal" rows="3" placeholder="Например: похудеть на 5 кг, подтянуть спину"></textarea>
+          </label>
+          <button class="btn" type="submit">Отправить заявку</button>
+          <p class="form__msg" id="form-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> [Имя Фамилия], персональный тренер</span>
+      <a href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
