@@ -79,14 +79,12 @@ h3 { font-size: 1.2rem; }
 .hero { padding: 72px 0; }
 .hero__inner { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 32px 0; }
-.hero__photo, .about__photo {
-  aspect-ratio: 4 / 5;
+.hero__photo {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: 4 / 5; object-fit: cover; object-position: center top;
   border-radius: var(--radius);
-  background: linear-gradient(160deg, #2a313c, #161a21);
-  /* Чтобы поставить фото: background: url("photo.jpg") center / cover; */
   border: 1px solid var(--border);
-  display: grid; place-items: center;
-  text-align: center; color: var(--muted);
+  background: var(--card);
 }
 .facts { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 32px; }
 .facts strong { display: block; font-size: 1.5rem; color: var(--text); }
@@ -96,7 +94,6 @@ h3 { font-size: 1.2rem; }
 .section { padding: 80px 0; }
 .section--alt { background: var(--bg-alt); }
 
-.about { display: grid; grid-template-columns: 1fr 1.3fr; gap: 48px; align-items: center; }
 .checklist { list-style: none; padding: 0; }
 .checklist li { padding-left: 28px; position: relative; margin-bottom: 10px; }
 .checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 800; }
@@ -125,6 +122,7 @@ h3 { font-size: 1.2rem; }
   border-radius: var(--radius); padding: 32px;
 }
 .price--accent { border-color: var(--accent); }
+.prices--single { grid-template-columns: minmax(0, 420px); }
 .price__value { font-size: 2rem; font-weight: 800; margin: 0 0 16px; }
 .price__value small { font-size: .9rem; color: var(--muted); font-weight: 500; }
 .price ul { padding-left: 20px; color: var(--muted); flex: 1; margin: 0 0 24px; }
@@ -176,9 +174,8 @@ details p { color: var(--muted); margin: 12px 0 0; }
   .nav a { padding: 12px 0; }
   .nav .btn { text-align: center; margin-top: 8px; }
   .hero { padding: 40px 0; }
-  .hero__inner, .about, .contact { grid-template-columns: 1fr; gap: 32px; }
-  .hero__photo { order: -1; aspect-ratio: 16 / 10; }
-  .about__photo { aspect-ratio: 16 / 10; }
+  .hero__inner, .contact { grid-template-columns: 1fr; gap: 32px; }
+  .hero__photo { order: -1; aspect-ratio: 1 / 1; }
   .section { padding: 56px 0; }
   .form { padding: 24px; }
 }

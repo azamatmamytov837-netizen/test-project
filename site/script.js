@@ -1,5 +1,5 @@
-// ЗАМЕНИТЕ: номер WhatsApp в международном формате, только цифры (например 79991234567)
-const WHATSAPP_NUMBER = "70000000000";
+// Номер WhatsApp в международном формате, только цифры
+const WHATSAPP_NUMBER = "79635667885";
 
 const burger = document.querySelector(".burger");
 const nav = document.getElementById("nav");
@@ -16,18 +16,12 @@ nav.querySelectorAll("a").forEach((link) =>
   })
 );
 
-// Кнопка «Выбрать» в тарифе подставляет его в форму
 const form = document.getElementById("form");
-document.querySelectorAll("[data-plan]").forEach((btn) =>
-  btn.addEventListener("click", () => {
-    form.elements.plan.value = btn.dataset.plan;
-  })
-);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const msg = document.getElementById("form-msg");
-  const { name, contact, plan, goal } = form.elements;
+  const { name, contact, goal } = form.elements;
 
   let valid = true;
   [name, contact].forEach((field) => {
@@ -44,7 +38,6 @@ form.addEventListener("submit", (e) => {
     "Здравствуйте! Хочу записаться на тренировку.",
     `Имя: ${name.value.trim()}`,
     `Контакт: ${contact.value.trim()}`,
-    `Формат: ${plan.value}`,
     goal.value.trim() ? `Цель: ${goal.value.trim()}` : "",
   ].filter(Boolean).join("\n");
 
