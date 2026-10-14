@@ -1,0 +1,5 @@
+profile.json
+.env
+__pycache__/
+scripts/*.md
+!scripts/.gitkeep
